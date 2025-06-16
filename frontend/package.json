@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
     "axios": "^1.9.0",
+    "chatgo": "file:..",
     "daisyui": "^5.0.43",
     "lucide-react": "^0.515.0",
     "react": "^19.1.0",
