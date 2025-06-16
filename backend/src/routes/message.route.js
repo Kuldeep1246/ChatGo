@@ -3,11 +3,11 @@ import express from "express";
 import { getMessages, getUsersForSidebar, sendMessage } from "../controllers/message.controller.js";
 import { protectRoute } from "../middleware/auth.middleware.js";
 
-const router = express.Router();
+const MessageRouter = express.Router();
 
-router.get("/users", protectRoute, getUsersForSidebar);
-router.get("/:id", protectRoute, getMessages);
+MessageRouter.get("/users", protectRoute, getUsersForSidebar);
+MessageRouter.get("/:id", protectRoute, getMessages);
 
-router.post("/send/:id", protectRoute, sendMessage);
+MessageRouter.post("/send/:id", protectRoute, sendMessage);
 
-export default router;
+export default MessageRouter;
