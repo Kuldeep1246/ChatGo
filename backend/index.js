@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(express.json())
 app.use(
   cors({
-    origin: "https://chat-go-cmlc.vercel.app",
+    origin: "https://chatgo-frontend.onrender.com",
     credentials:true
   })
 );
