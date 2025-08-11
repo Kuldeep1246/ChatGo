@@ -8,7 +8,7 @@ let app = express()
 const server = http.createServer(app)
 const io = new Server(server,{
     cors:{
-        origin:'https://chat-go-cmlc.vercel.app'
+        origin:'https://chatgo-frontend.onrender.com'
     }
 })
 export const userSocket = {}
