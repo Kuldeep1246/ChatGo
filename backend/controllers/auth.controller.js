@@ -6,7 +6,7 @@ import User from "../models/user.model.js";
 
 export const signUp = async (req, res) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const { username, email, password } = req.body;
 
     const checkUser = await User.findOne({username})
