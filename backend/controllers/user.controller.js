@@ -21,7 +21,8 @@ export const editProfile = async (req, res) => {
     let image;
 
     if (req.file) {
-      image = await uploadOnCloudinary(req.file.path);
+     console.log(req.file)
+     image = await uploadOnCloudinary(req.file?.path)
     }
 
     let user = await User.findById(req.userId);

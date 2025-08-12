@@ -10,7 +10,8 @@ export const sendMessage = async(req,res)=>{
         const {message} = req.body
         let image
         if(req.file){
-            image = await uploadOnCloudinary(req.file.path)
+            console.log(req.file)
+            image = await uploadOnCloudinary(req.file?.path)
         }
         let conversation = await Conversation.findOne({
             participants:{$all:[sender,receiver]}
